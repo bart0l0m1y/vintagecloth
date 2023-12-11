@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>реєстрація</title>
+  <link rel="stylesheet" href="register.css">
+  <link rel="icon" href="img/assets/favicon.png">
+</head>
+<header>
+  <img src="img/logo.png"alt="VintageCloth" class="logo"/>
+  
+</header>
+<form id="registrationForm">
+    <div class="container">
+      <h1>Реєстрація</h1>
+      <p>Будь ласка заповініть усі поля реєстрації.</p>
+      <hr>
+
+        <label for="username">Ім'я користувача:</label>
+        <input type="text" id="username" name="username"><br><br>
+        
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email"><br><br>
+
+        <label for="password">Пароль:</label>
+        <input type="password" id="password" name="password"><br><br>
+
+       
+        <input type="submit" value="Зареєструватися">
+        </div>
+        </div>
+
+    <div class="container signin">
+      <p>Вже зареєстровані? <a href="login.html">Увійти</a>.</p>
+    </div>
+  </form> 
+  <script>
+    document.getElementById('registrationForm').addEventListener('submit', function(event) {
+        event.preventDefault();
+      
+        const username = document.getElementById('username').value;
+        const email = document.getElementById('email').value;
+        const password = document.getElementById('password').value;
+      
+        localStorage.setItem('username', username);
+        localStorage.setItem('email', email);
+        localStorage.setItem('password', password);
+        
+        window.location.href = 'profile.html';
+    });
+</script>
+  

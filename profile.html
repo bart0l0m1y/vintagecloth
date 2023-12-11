@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>VintageCloth</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" href="img/assets/favicon.png">
+</head>
+<body>
+    <header>
+        <img src="img/logo.png"alt="VintageCloth" class="logo"/>
+            <div class="topnav">
+              <a href="products.html">Товари</a>
+              <a href="cart.html">Корзина</a>
+              <a href="profile.html">Профіль</a>
+            </div> 
+    </header>
+
+    <main>
+        <section class="profile">
+            <div class="profile-info">
+                <h2>Профіль</h2>
+                <p id="username"></p>
+                <p id="email"></p>
+                <button id="logoutButton">Вийти з акаунту</button>
+            </div>
+            <!-- Додаткові поля для інформації про користувача -->
+        </section>
+    </main>
+    
+
+
+    <script>
+        // Отримання даних з localStorage
+        const storedUsername = localStorage.getItem('username');
+        const storedEmail = localStorage.getItem('email');
+
+        // Відображення отриманих даних на сторінці
+        const usernameElement = document.getElementById('username');
+        const emailElement = document.getElementById('email');
+
+        if (storedUsername) {
+            usernameElement.textContent = `Ім'я користувача: ${storedUsername}`;
+        }
+
+        if (storedEmail) {
+            emailElement.textContent = `Електронна пошта: ${storedEmail}`;
+        }
+        // Отримання елемента кнопки
+const logoutButton = document.getElementById('logoutButton');
+
+// Додавання обробника події на кнопку "Вийти з аккаунту"
+logoutButton.addEventListener('click', function() {
+    // Очищення localStorage
+    localStorage.clear();
+
+    // Перенаправлення на сторінку реєстрації
+    window.location.href = 'register.html';
+});
+
+    </script>
+    <script src="script.js"></script>
+</body>
+</html>

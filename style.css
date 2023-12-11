@@ -1,0 +1,207 @@
+@import url('https://fonts.googleapis.com/css2?family=Arimo&display=swap');
+
+header {
+  background-color: #1a1a1a;
+  padding: 20px;
+  text-align: center; 
+}
+nav ul {
+  list-style-type: none;
+}
+body{
+  background: rgb(0, 0, 0);
+  background: linear-gradient(90deg, rgba(0,197,221,0.2413165949973739) 0%, rgba(173,10,237,0.2945378835127801) 50%, rgba(81,0,255,0.20210090872286413) 100%); 
+}
+nav ul li {
+  display: inline;
+  margin-right: 20px;
+}
+div{
+  font-family: 'Arimo', sans-serif;
+  font-size: 15px;
+  width: 700px;
+  border: 3px solid rgb(182, 55, 241);
+  padding: 10px;
+  margin: auto;
+  background-color: #181818;
+  justify-content: center;
+  align-items: center;
+  
+}
+.products {
+  display: flex;
+  flex-wrap: wrap;
+  border: 3px solid rgb(182, 55, 241);
+  width: 700px;
+  padding: 10px;
+  margin: auto;
+  color: #ccc;
+  width: 80%;
+  border-radius: 10px;
+  background-color: #1b1b1b;
+}
+.product {
+  width: 200px;
+  height: 420px;
+  padding: 5px;
+  margin: 10px;
+  border: none;
+  box-shadow: 0px 7px 7px rgba(224, 52, 196, 0.7);
+  border-radius: 10px;
+  text-align: center;
+  
+}
+.product img {
+  max-width: 100%; 
+  height: auto;
+  display: block;
+  margin-bottom: 10px;
+}
+.poduct h4{
+   
+    font-size: large ;
+    font-family: 'Arimo', sans-serif;
+  
+}
+h2{
+  font-family: 'Arimo', sans-serif;
+  text-align: center;
+  font-size: 200%;
+  width: 50%;
+  margin: auto;
+  padding: 10px;
+  color: white;
+  text-shadow: 0px 3px 7px black;
+}
+
+#username{
+  font-size: 150%;
+}
+#email{
+  font-size: 150%;
+}
+
+.logo {
+	max-width: 200px;
+	margin-right: 20px;
+}
+
+.cart-item {
+  border: 1px solid #ccc;
+  box-shadow: #000;
+  padding: 10px;
+  width: 200px;
+  display: inline-block;
+  vertical-align: top;
+  margin-right: 10px;
+  margin-bottom: 10px;
+  
+}
+.cart-item img {
+  max-width: 100px;
+  max-height: 100px;
+  border-radius: 10px;
+}
+
+.cart-item p {
+  margin: 5px 0;
+}
+.cart-item button {
+  display: block;
+  margin-top: 10px;
+  width: 50px; 
+  height: 50px; 
+  background-image: url('img/assets/removefromcart.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.product button{
+  width: 50px; 
+  height: 50px; 
+  background-image: url('img/assets/addtocart.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  margin: auto;
+  border: none;
+  border-radius: 3px;
+  box-shadow: 0px 3px 3px rgb(221, 0, 155);
+  
+}
+.popup-container {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7); 
+  justify-content: center;
+  align-items: center;
+}
+p{
+  color: white;
+}
+
+.popup {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #292929;
+  text-align: center;
+  padding: 30px;
+  color: white;
+  font-size: larger;
+  border: 1px solid #000;
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out;
+}
+.button {
+  background-color: #864a8b; /* Green */
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+#logoutButton{
+  background-color: #864a8b; /* Green */
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+.topnav {
+  background-color: #333;
+  overflow: hidden;
+  display: flex;
+  border: 2px solid rgb(182, 55, 241);
+  padding: 15px;
+  border-radius: 100px;  
+  align-items: center;
+  margin-top: 20px;
+  size: auto;
+  width: 15%;
+}
+.topnav a {
+  color: #ffffff;
+  text-shadow: 0px 3px 5px #000;
+  text-align: center;
+  padding: 0px 16px;
+  text-decoration: none;
+  font-size: 15px;  
+}
+.topnav a:hover {
+  background-color: rgba(255, 255, 255, 0.301);
+}
