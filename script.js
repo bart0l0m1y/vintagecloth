@@ -7,7 +7,7 @@ function addToCart(productName, price, imageUrl) {
   cart.push(item);
   localStorage.setItem('cart', JSON.stringify(cart));
 
-  // Вспливаюче вікно з повідомленням про успішне додавання в корзину
+
   const popup = document.createElement('div');
   popup.classList.add('popup');
   popup.textContent = 'Товар додано в корзину!';
