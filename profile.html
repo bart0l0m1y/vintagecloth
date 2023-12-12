@@ -24,18 +24,16 @@
                 <p id="email"></p>
                 <button id="logoutButton">Вийти з акаунту</button>
             </div>
-            <!-- Додаткові поля для інформації про користувача -->
         </section>
     </main>
     
 
 
     <script>
-        // Отримання даних з localStorage
         const storedUsername = localStorage.getItem('username');
         const storedEmail = localStorage.getItem('email');
 
-        // Відображення отриманих даних на сторінці
+        
         const usernameElement = document.getElementById('username');
         const emailElement = document.getElementById('email');
 
@@ -46,15 +44,15 @@
         if (storedEmail) {
             emailElement.textContent = `Електронна пошта: ${storedEmail}`;
         }
-        // Отримання елемента кнопки
+        
 const logoutButton = document.getElementById('logoutButton');
 
-// Додавання обробника події на кнопку "Вийти з аккаунту"
+
 logoutButton.addEventListener('click', function() {
-    // Очищення localStorage
+    
     localStorage.clear();
 
-    // Перенаправлення на сторінку реєстрації
+    
     window.location.href = 'register.html';
 });
 
